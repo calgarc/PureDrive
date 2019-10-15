@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "helvetica";
+  src: url("css/helvetica.ttf") format("truetype"),  url("css/helvetica.woff") format("woff");
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+body {
+margin:0px;
+}
+
+.grad {
+height: 100%;
+width: 100%;
+position: fixed;
+}
+
+.form a {
+padding: 10px;
+color: #f1f1f1;
+margin: auto;
+width: 250px;
+display: block;
+font-family: helvetica;
+}
+
+.form .p {
+width: 5px;
+float: left;
+padding-top: 9px;
+padding-bottom: 9px;
+margin: 0px;
+color:#999999;
+font-size:26px;
+background-color: rgba(240, 240, 240, 0.7);
+height:32px;
+}
+
+.form a:hover {
+color:#030303;
+}
+
+h1 {
+font-family:helvetica;
+text-align:center;
+font-weight:200;
+color:#f1f1f1;
+}
+
+i {
+width: 15px;
+display: block !important;
+float: left;
+background-color: rgba(240, 240, 240, 0.7);
+height: 20px;
+padding: 18px 15px 12px 15px;
+border-radius: 10px 0px 0px 10px;
+color:#030303;
+}
+
+.in {
+width:270px;
+margin:auto;
+}
+
+input {
+display: block;
+padding: 10px;
+margin: 10px auto 10px 0px;
+border: 0px solid #cccccc;
+width: 200px;
+background-color: rgba(240, 240, 240, 0.7);
+border-radius: 0px 10px 10px 0px;
+box-shadow: 5px 2px 15px 2px rgba(127, 127, 127, 0.1);
+height: 30px;
+}
+
+.button {
+background-color: #f1f1f1;
+border: none;
+color: #b20938;
+padding: 10px;
+text-align: center;
+text-decoration: none;
+display: block;
+font-size: 16px;
+cursor:pointer;
+width:270px;
+margin:auto;
+margin-bottom:20px;
+margin-top:20px;
+border-radius:10px !important;
+height:43px !important;
+}
+
+.button:hover {
+background-color: #121212;
+color:#f1f1f1;
+}
+
+.form {
+width:350px;
+height:auto;
+display: block;
+margin:auto;
+padding:20px;
+
+border-radius:10px;
+}
+
+.connect {
+margin:auto;
+width:252px;
+text-align: center;
+font-size: 14px;
+color:#ffffff;
+font-weight:500;
+font-family: verdana;
+background:#aade87;
+padding:8px;
+border-radius:10px;
+}
+
+.connect2 {
+margin:auto;
+width:252px;
+text-align: center;
+font-size: 14px;
+color:#ffffff;
+font-weight:500;
+font-family: verdana;
+background:#c83737;
+padding:8px;
+border-radius:10px;
+}
+
+.main img {
+width: 250px;
+margin: auto;
+display: block;
+margin-bottom:10px;
+}
+
+.main {
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+margin:auto;
+height:50%;
+width:auto;
+display:block;
+}
+
+.setup p {
+width:100%;
+text-align:center;
+display:inline-block;
+color:#030303;
+font-family:helvetica;
+}
