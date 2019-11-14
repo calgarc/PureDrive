@@ -12,7 +12,7 @@ if(isset($_SESSION['user'])) {
         echo ('<div class="profiledown mobilemenu profile" onclick="mobilebar()" value="'.$uid.'"><i class="fas fa-bars" /></i></div>');
     }else {
         echo('<div class="profiledown" >');
-        protect($conn, 1);  
+        protect($conn, 1);
         echo('</div>');
     }
 }
