@@ -15,6 +15,14 @@ $users = 'active';
 require '../req/index.php';
 loggedin($root);
 restrict($conn, $admin, $username, 1);
+
+if($_GET['id'] != userid($conn, 1)) {
+    // session timed out
+    session_unset();
+    session_destroy();
+    $login = $root.'login';
+    header("Location: $login"); //die();
+}
 ?>
 
 
@@ -134,12 +142,13 @@ restrict($conn, $admin, $username, 1);
         $source = str_replace(str_split('gGbB '),"",$uplimit);
         $uplimit = encrypt($conn, 1, $source);
 
-
-        if (isset($_POST['update'])){
-            $result = $conn->prepare("UPDATE core_users SET core_email='".$useremail."', core_firstname='".$userfname."', core_lastname='".$userlname."', user_type='".$usertype."', uplimit='".$uplimit."' WHERE usalt='".$usercont."'");
-            $result->execute();
-            $result->setFetchMode(PDO::FETCH_ASSOC);
-            header("Location: updateuser?id=$usercont");
+        if('true' == usermatch($conn, 1)) {
+            if (isset($_POST['update'])){
+                $result = $conn->prepare("UPDATE core_users SET core_email='".$useremail."', core_firstname='".$userfname."', core_lastname='".$userlname."', user_type='".$usertype."', uplimit='".$uplimit."' WHERE usalt='".$usercont."'");
+                $result->execute();
+                $result->setFetchMode(PDO::FETCH_ASSOC);
+                header("Location: updateuser?id=$usercont");
+            }
         }
         ?>
         </form>
