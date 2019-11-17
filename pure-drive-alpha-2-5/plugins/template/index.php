@@ -1,16 +1,15 @@
 <!--plugin header-->
 <?php
+define('func', TRUE);
+
 $root = '../../';
-require $root.'req/headers.php';
+require '../req/headers.php';
 
-if(isset($_SESSION['user'])) {
-
-}else{
-    header("Location: ../../login"); //die();
-}
-
+$searchable = 'true';
 $plugin = 'active';
-require $root.'req/index.php';
+require '../req/index.php';
+
+IsSession();
 loggedin($root);
 ?>
 
