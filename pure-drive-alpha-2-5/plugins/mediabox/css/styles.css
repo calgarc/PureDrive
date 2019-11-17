@@ -1,0 +1,144 @@
+.main {
+color:#ffffff;
+}
+
+.audiofile {
+font-size:18px;
+padding: 5px;
+margin:10px;
+display:inline-block;
+}
+
+.right {
+width: 100% !important;
+color: #030303;
+padding: 5px 0px 0px 50px !important;
+}
+
+.mediabox {
+border-top:1px solid #dddddd;    
+}
+
+.audionav img {
+height:60px;
+float:right;
+}
+
+.mediabox .column {
+float: left;
+width: 100%;
+height:50px;
+padding: 0px;
+border: 1px solid #dddddd;
+border-top:0px;
+margin:0px;
+text-align:left;
+cursor:pointer;
+}
+
+.mediabox .column:hover {
+background:#dddddd !important;
+}
+
+.mediabox i {
+font-size: 40px;
+}
+
+.mediabox a {
+padding-top:5px;
+padding-right:5px;
+z-index:99;
+}
+
+.mediabox .favbtn, .mediabox .favbtnactive { 
+float: right !important;
+text-align: center;
+display: inline-block;
+background: none;
+width: auto !important;
+border: none 0px;
+z-index: 99;
+position: relative;
+}
+
+.play {
+float:left;
+text-align:center;
+display: inline-block;
+box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+background: #ffd116;
+border:0px solid #ffd116;
+height: 60px;
+width:60px;
+border-radius:50%;
+font-size:16px !important;
+transition:0.4s;
+cursor:pointer;
+}
+.play:hover {
+background:#333333;
+}
+
+.stop:hover i{
+color:#ffd116;
+}
+
+.stop {
+width:50px;
+height:50px;
+margin-top:5px;
+float:left;
+text-align:center;
+display: inline-block;
+border:0px;
+background:none;
+cursor:pointer;
+}
+
+.play i {
+font-size: 24px;
+padding-left:12px;
+text-align:center;
+color:#ffffff;
+}
+
+.stop i {
+padding-left:6px;
+font-size: 20px !important;
+color:#ffffff;
+}
+
+.audionav {
+height: 80px;
+width: 100%;
+background: #4e4056;
+padding: 10px;
+border:solid 1px #4e4056;
+}
+
+#audio {
+float:left;
+border:1px solid #dddddd;
+background:#ffffff;
+border-radius: 7px;
+}
+
+.locbtn {
+-webkit-appearance: none; 
+-moz-appearance: none;
+height: 50px !important; 
+background: url("arrow.png") right center no-repeat; 
+background-color: #ffffff;
+appearance: none; 
+}
+
+.audionav form {
+margin-left: 15px;
+width: 200px;
+float: right;
+margin-top: 5px;
+}
+
+.audionav select {
+width:180px;
+}
