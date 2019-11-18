@@ -1,3 +1,25 @@
+<?php
+define('func', TRUE);
+require '../config.php';
+$install  = true;
+
+try {
+    $result = $conn->prepare("SELECT file_name FROM core_folders ORDER BY id DESC");
+    $result->execute();
+}catch(Exception $e) {
+    $install = false;
+}
+
+if(true == $install){
+  ob_start();
+  $host  = $_SERVER['HTTP_HOST'];
+  $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+  header("Location: ../../login");
+  ob_end_flush();
+  exit();
+}
+?>
+
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
