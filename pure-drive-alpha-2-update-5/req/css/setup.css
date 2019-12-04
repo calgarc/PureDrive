@@ -1,0 +1,172 @@
+@font-face {
+  font-family : "helvetica";
+  src         : url("css/helvetica.ttf") format("truetype"),
+                url("css/helvetica.woff") format("woff");
+}
+
+.clearfix:after {
+  content    : " ";
+  display    : block;
+  visibility : hidden;
+  height     : 0;
+  clear      : both;
+  font-size  : 0;
+}
+
+body {
+  margin : 0px;
+}
+
+.grad {
+  position : fixed;
+  width    : 100%;
+  height   : 100%;
+}
+
+.form a {
+  display     : block;
+  width       : 250px;
+  margin      : auto;
+  padding     : 10px;
+  color       : #f1f1f1;
+  font-family : helvetica;
+}
+
+.form .p {
+  width            : 5px;
+  height           : 32px;
+  float            : left;
+  margin           : 0px;
+  padding-top      : 9px;
+  padding-bottom   : 9px;
+  color            : #020202;
+  background-color : rgba(240, 240, 240, 0.7);
+  font-size        : 26px;
+}
+
+.form a:hover {
+  color : #030303;
+}
+
+h1 {
+  color       : #f1f1f1;
+  text-align  : center;
+  font-family : helvetica;
+  font-weight : 200;
+}
+
+i {
+  display          : block !important;
+  width            : 15px;
+  height           : 20px;
+  float            : left;
+  padding          : 18px 15px 12px 15px;
+  color            : #030303;
+  border-radius    : 10px 0px 0px 10px;
+  background-color : rgba(240, 240, 240, 0.7);
+}
+
+.in {
+  width  : 270px;
+  margin : auto;
+}
+
+input {
+  display          : block;
+  width            : 200px;
+  height           : 30px;
+  margin           : 10px auto 10px 0px;
+  padding          : 10px;
+  border           : 0px solid #cccccc;
+  border-radius    : 0px 10px 10px 0px;
+  background-color : rgba(240, 240, 240, 0.7);
+  box-shadow       : 5px 2px 15px 2px rgba(127, 127, 127, 0.1);
+}
+
+.button {
+  display          : block;
+  width            : 270px;
+  height           : 43px !important;
+  margin           : auto;
+  margin-top       : 20px;
+  margin-bottom    : 20px;
+  padding          : 10px;
+  color            : #b20938;
+  border           : none;
+  border-radius    : 10px !important;
+  background-color : #f1f1f1;
+  text-align       : center;
+  text-decoration  : none;
+  font-size        : 16px;
+  cursor           : pointer;
+}
+
+.button:hover {
+  color            : #f1f1f1;
+  background-color : #121212;
+}
+
+.form {
+  display       : block;
+  width         : 350px;
+  height        : auto;
+  margin        : auto;
+  margin-bottom : 10px;
+  padding       : 20px;
+  border-radius : 10px;
+}
+
+.connect {
+  width         : 252px;
+  margin        : auto;
+  margin-bottom : 10px;
+  padding       : 8px;
+  color         : #ffffff;
+  border-radius : 10px;
+  background    : #aade87;
+  text-align    : center;
+  font-family   : verdana;
+  font-size     : 14px;
+  font-weight   : 500;
+}
+
+.connect2 {
+  width         : 252px;
+  margin        : auto;
+  margin-bottom : 10px;
+  padding       : 8px;
+  color         : #ffffff;
+  border-radius : 10px;
+  background    : #c83737;
+  text-align    : center;
+  font-family   : verdana;
+  font-size     : 14px;
+  font-weight   : 500;
+}
+
+.main img {
+  display       : block;
+  width         : 250px;
+  margin        : auto;
+  margin-bottom : 10px;
+}
+
+.main {
+  display  : block;
+  position : absolute;
+  top      : 0;
+  right    : 0;
+  bottom   : 0;
+  left     : 0;
+  width    : auto;
+  height   : 50%;
+  margin   : auto;
+}
+
+.setup p {
+  display     : inline-block;
+  width       : 100%;
+  color       : #ffffff;
+  text-align  : center;
+  font-family : helvetica;
+}
