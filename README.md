@@ -13,4 +13,4 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License, version 3,
 along with this program.  If not, see <http://www.gnu.org/licenses/>
 
-Copyright 2011-2019 by the PureDrive contributors
+Copyright 2019-2020 by the PureDrive contributors
